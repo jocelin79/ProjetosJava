@@ -3,7 +3,10 @@ public class App {
         Caneta c1 = new Caneta();
         c1.modelo = "BIC Crisal";
         c1.cor = "Azul";
-        c1.ponta = 0.5;
+        // c1.ponta = 0.5;
+        c1.carga = 80;
+        c1.tampada = true;
         c1.status();
+        
     }
 }
