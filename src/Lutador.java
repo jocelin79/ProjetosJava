@@ -1,4 +1,6 @@
 public class Lutador {
+
+  //Atributos
   private String nome;
   private String nacionalidade;
   private int idade;
@@ -9,8 +11,8 @@ public class Lutador {
   private int derrotas;
   private int empates;
 
+  //Métodos Especiais
   public Lutador(String nome, String nacionalidade, int idade, float altura, float peso, int vitorias, int derroatas, int empates) {
-    //Atributos
     this.nome = nome;
     this.nacionalidade = nacionalidade;
     this.idade = idade;
@@ -20,7 +22,7 @@ public class Lutador {
     this.derrotas = derroatas;
     this.empates = empates;
   }
-  //Métodos Especiais
+
   public String getNome() {
     return nome;
   }
@@ -59,14 +61,25 @@ public class Lutador {
 
   public void setPeso(float peso) {
     this.peso = peso;
+    this.setCategoria();
   }
 
   public String getCategoria() {
     return categoria;
   }
 
-  public void setCategoria(String categoria) {
-    this.categoria = categoria;
+  private void setCategoria() {
+    if (this.peso < 52.2) {
+      this.categoria = "Inválido";
+    } else if (this.peso <= 70.3) {
+      this.categoria = "Leve";
+    } else if (this.peso <= 83.9) {
+      this.categoria = "Médio";
+    } else if (this.peso <= 120.2) {
+      this.categoria = "Pesado";
+    } else {
+      this.categoria = "Inválido";
+    }
   }
 
   public int getVitorias() {
