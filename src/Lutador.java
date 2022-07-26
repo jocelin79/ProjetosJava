@@ -1,6 +1,6 @@
 public class Lutador {
 
-  //Atributos
+  // Atributos
   private String nome;
   private String nacionalidade;
   private int idade;
@@ -11,13 +11,14 @@ public class Lutador {
   private int derrotas;
   private int empates;
 
-  //Métodos Especiais
-  public Lutador(String nome, String nacionalidade, int idade, float altura, float peso, int vitorias, int derroatas, int empates) {
+  // Métodos Especiais
+  public Lutador(String nome, String nacionalidade, int idade, float altura, float peso, int vitorias, int derroatas,
+      int empates) {
     this.nome = nome;
     this.nacionalidade = nacionalidade;
     this.idade = idade;
     this.altura = altura;
-    this.peso = peso;
+    this.setPeso(peso);
     this.vitorias = vitorias;
     this.derrotas = derroatas;
     this.empates = empates;
@@ -106,10 +107,34 @@ public class Lutador {
     this.empates = empates;
   }
 
-  //Métodos
-  public void apresentar() {};
-  public void Status() {};
-  public void ganharLuta() {};
-  public void perderLuta() {};
-  public void empatarLuta() {};
+  // Métodos Públicos
+  public void apresentar() {
+    System.out.println("------------------------------------");
+    System.out.println("Chegou a hora! Apresentamos o lutador " + this.getNome());
+    System.out.println("Diretamente de " + this.getNacionalidade());
+    System.out.println("com " + this.getIdade() + " anos e " + this.getAltura() + " de altura.");
+    System.out.println("pesando " + this.getPeso() + " kg");
+    System.out.println(this.getVitorias() + " vitórias");
+    System.out.println(this.getDerrotas() + " derrotas e ");
+    System.out.println(this.getEmpates() + " empates!");
+  };
+
+  public void status() {
+    System.out.println(this.getNome() + " é um peso " + this.getCategoria());
+    System.out.println(this.getVitorias() + " vitórias");
+    System.out.println(this.getDerrotas() + " derrotas");
+    System.out.println(this.getEmpates() + " empates");
+  };
+
+  public void ganharLuta() {
+    this.setVitorias(this.getVitorias() + 1);
+  };
+
+  public void perderLuta() {
+    this.setDerrotas(this.getDerrotas() + 1);
+  };
+
+  public void empatarLuta() {
+    this.setEmpates(this.getEmpates() + 1);
+  };
 }
