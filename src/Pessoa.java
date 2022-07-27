@@ -33,6 +33,6 @@ public class Pessoa {
   
   //Métodos Publicos
   public void fazerAniver() {
-  
+    this.idade++;
   };
 };
