@@ -47,10 +47,12 @@ public class Luta {
         this.aprovada = true;
         this.desafiado = l1;
         this.desafiante =l2;
+        System.out.println("Luta marcada!");
       } else {
         this.aprovada = false;
         this.desafiado = null;
         this.desafiante = null;
+        System.out.println("Luta não aprovada!");
       }
     }
   };
