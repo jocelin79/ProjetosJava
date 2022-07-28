@@ -67,8 +67,9 @@ public class Livro implements Publicacao {
 
   // Métodos Público
   public String detalhes() {
-    return "Livro [aberto=" + aberto + ", autor=" + autor + ", leitor=" + leitor + ", pagAtual=" + pagAtual
-        + ", titulo=" + titulo + ", totPaginas=" + totPaginas + "]";
+    return "Livro [aberto=" + aberto + ",\n autor=" + autor + ",\n leitor=" + leitor.getNome() + ",\n idade="
+        + leitor.getIdade() + ",\n sexo=" + leitor.getSexo() + ",\n pagAtual=" + pagAtual
+        + ",\n titulo=" + titulo + ",\n totPaginas=" + totPaginas + "]";
   }
 
   @Override
@@ -83,7 +84,11 @@ public class Livro implements Publicacao {
 
   @Override
   public void folhear(int pagina) {
-    this.setPagAtual(pagina);
+    if (pagina > this.getTotPaginas()) {
+      this.setPagAtual(0);
+    } else {
+      this.setPagAtual(pagina);
+    }
   }
 
   @Override
