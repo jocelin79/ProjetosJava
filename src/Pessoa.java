@@ -36,11 +36,15 @@ public class Pessoa {
   public void setIdade(String sexo) {
     this.sexo = sexo;
   };
+
+  @Override
+  public String toString() {
+    return "Pessoa [idade=" + idade + ",\n nome=" + nome + ",\n sexo=" + sexo + "]";
+  };
   
   //Métodos Publicos
+
   public void fazerAniver() {
     this.idade++;
   };
-  
-  "criar um toString";
 };
