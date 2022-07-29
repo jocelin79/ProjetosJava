@@ -23,6 +23,10 @@ public class Aluno extends Pessoa {
   
   //Métodos Publicos
   
+  public void PagarMensalidade() {
+    System.out.println("Mensalidade de Aluno foi paga!");
+  };
+  
   public void cancelarMatr() {
     System.out.println("Matrículo cancelada!");
   }
