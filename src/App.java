@@ -12,5 +12,11 @@ public class App {
         a1.setIdade(16);
         a1.setSexo("M");
         a1.pagarMensalidade();
+        Bolsista b1 = new Bolsista();
+        b1.setMatr(1120);
+        b1.setNome("Jubileu");
+        b1.setBolsa(15);
+        b1.setSexo("M");
+        b1.pagarMensalidade();
     };
 }
