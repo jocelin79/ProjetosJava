@@ -34,7 +34,7 @@ public abstract class Pessoa {
 
   @Override
   public String toString() {
-    return "Pessoa [idade=" + idade + ",\n nome=" + nome + ",\n sexo=" + sexo + "]";
+    return "Dados [idade=" + idade + ",\n nome=" + nome + ",\n sexo=" + sexo + "]";
   };
   
   //Métodos Publicos
