@@ -23,7 +23,7 @@ public class Aluno extends Pessoa {
   
   //Métodos Publicos
   
-  public void PagarMensalidade() {
+  public void pagarMensalidade() {
     System.out.println("Mensalidade de Aluno " + this.nome + " foi paga!");
   };
   

@@ -7,7 +7,7 @@ public class App {
         System.out.println(v1.toString());
         Aluno a1 = new Aluno();
         a1.setNome("Cláudio");
-        a1.setMatricula(1111);
+        a1.setMatr(1111);
         a1.setCurso("Informática");
         a1.setIdade(16);
         a1.setSexo("M");

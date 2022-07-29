@@ -28,7 +28,7 @@ public abstract class Pessoa {
   };
   
   
-  public void setIdade(String sexo) {
+  public void setSexo(String sexo) {
     this.sexo = sexo;
   };
 
