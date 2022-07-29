@@ -5,9 +5,6 @@ public class Professor extends Pessoa{
   private float salario;
   
   //Métodos Especiais
-  public Professor(String nome, int idade, String sexo) {
-    super(nome, idade, sexo);
-  };
 
   public String getEspecialidade() {
     return especialidade;

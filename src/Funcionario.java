@@ -5,9 +5,6 @@ public class Funcionario extends Pessoa{
   private boolean trabalhando;
   
   //Métodos Especiais
-  public Funcionario(String nome, int idade, String sexo) {
-    super(nome, idade, sexo);
-  }
   
   public String getSetor() {
     return setor;

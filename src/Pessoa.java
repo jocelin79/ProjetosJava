@@ -5,11 +5,6 @@ public class Pessoa {
   private String sexo;
   
   //Métodos Especiais
-  public Pessoa(String nome, int idade, String sexo) {
-    this.nome = nome;
-    this.idade = idade;
-    this.sexo = sexo;
-  };
   
   public String getNome() {
     return nome;

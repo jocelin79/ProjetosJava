@@ -4,9 +4,6 @@ public class Aluno extends Pessoa {
   private String curso;
   
   //Métodos Especiais
-  public Aluno(String nome, int idade, String sexo) {
-    super(nome, idade, sexo);
-  }
 
   public int getMatr() {
     return matr;
