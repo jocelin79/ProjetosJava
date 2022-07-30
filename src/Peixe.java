@@ -1,4 +1,4 @@
-public class Paixe extends Animal{
+public class Peixe extends Animal{
   // Atributos
   private String corEscama;
 

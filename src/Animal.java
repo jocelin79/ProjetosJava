@@ -4,11 +4,12 @@ public abstract class Animal {
   protected int idade;
   protected int membros;
 
+  // Métodos Especiais
   public float getPeso() {
+    System.out.println(this.peso);
     return peso;
   }
 
-  // Métodos Especiais
   public void setPeso(float peso) {
     this.peso = peso;
   }
