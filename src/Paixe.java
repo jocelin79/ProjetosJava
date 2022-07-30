@@ -1,4 +1,4 @@
-public class Reptil extends Animal {
+public class Paixe extends Animal{
   // Atributos
   private String corEscama;
 
@@ -12,19 +12,22 @@ public class Reptil extends Animal {
   }
 
   // Métodos Públicos
+  public void soltarBolha() {
+    System.out.println("Soltou bolha");
+  };
+
   @Override
   public void alimentar() {
-    System.out.println("Comeu Vegetais.");
+    System.out.println("Comeu substâncias.");
   }
 
   @Override
   public void emitirSom() {
-    System.out.println("Som de Reptil.");
+    System.out.println("Peixe não faz som.");
   }
 
   @Override
   public void locomover() {
-    System.out.println("Rastejou.");
+    System.out.println("Nadou.");
   }
-
 }
