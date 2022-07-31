@@ -1,33 +1,32 @@
 public abstract class Pessoa {
-  //Atributos
+  // Atributos
   protected String nome;
   protected int idade;
   protected String sexo;
-  
-  //Métodos Especiais
-  
+  protected float experiencia;
+
+  // Métodos Especiais
+
   public String getNome() {
     return nome;
   };
-  
+
   public void setNome(String nome) {
     this.nome = nome;
   };
-  
+
   public int getIdade() {
-   return idade;
+    return idade;
   };
-  
-  
+
   public void setIdade(int idade) {
     this.idade = idade;
   };
-  
+
   public String getSexo() {
-     return sexo;
+    return sexo;
   };
-  
-  
+
   public void setSexo(String sexo) {
     this.sexo = sexo;
   };
@@ -36,10 +35,14 @@ public abstract class Pessoa {
   public String toString() {
     return "Dados: [idade=" + idade + ",\n nome=" + nome + ",\n sexo=" + sexo + "]";
   };
-  
-  //Métodos Publicos
+
+  // Métodos Publicos
 
   public void fazerAniver() {
     this.idade++;
+  };
+
+  public void ganharExp() {
+    this.experiencia++;
   };
 };

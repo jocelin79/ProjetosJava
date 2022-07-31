@@ -58,16 +58,22 @@ public class Video implements AcoesVideo {
   // Métodos Públicos
   @Override
   public void play() {
-
+    this.reproduzindo = true;
   }
 
   @Override
   public void pause() {
-
+    this.reproduzindo = false;
   }
 
   @Override
   public void like() {
+    this.curtidas++;
+  }
 
+  @Override
+  public String toString() {
+    return "Video [avaliacao=" + avaliacao + ", curtidas=" + curtidas + ", reproduzindo=" + reproduzindo + ", titulo="
+        + titulo + ", views=" + views + "]";
   }
 }
