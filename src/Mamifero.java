@@ -1,6 +1,6 @@
 public class Mamifero extends Animal {
   // Atributo
-  private String corPelo;
+  protected String corPelo;
 
   // Métodos Especiais
   public String getCorPelo() {
