@@ -10,7 +10,19 @@ public class Visualizacao {
   };
   
   public Gafanhoto getEspectador() {
-    
+  return this.espectador;
+  };
+  
+  public void setEspectador(Gafanhoto espectador) {
+  this.espectador = espectador;
+  };
+  
+  public Video getFilme() {
+  return this.filme;
+  };
+  
+  public void setFilme(Video filme) {
+  this.filme = filme;
   };
   
   //Métodos Públicos
