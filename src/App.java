@@ -10,6 +10,11 @@ public class App {
         g[0] = new Gafanhoto("Jó", 12, "M", "j12");
         g[1] = new Gafanhoto("In", 20, "F", "i20");
 
-        System.out.println(g[0].toString());
+        Visualizacao vis[] = new Visualizacao[5];
+        vis[0] = new Visualizacao(g[0], v[2]);
+        vis[1] = new Visualizacao(g[0], v[1]);
+        
+        System.out.println(vis[0].toString());
+        System.out.println(vis[1].toString());
     };
 }
